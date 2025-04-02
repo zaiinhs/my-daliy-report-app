@@ -12,30 +12,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SalaryTable from "./salary-table";
 import SalaryChart from "./salary-chart";
 import AddSalaryForm from "./add-salary-form";
+import { INITIAL_SALARY_DATA } from "@/constants/data-salary";
 
 // Sample data based on the provided information
-const initialSalaryData = [
-  { date: "25/11/2023", amount: 500000 },
-  { date: "25/12/2023", amount: 500000 },
-  { date: "25/01/2024", amount: 500000 },
-  { date: "25/02/2024", amount: 500000 },
-  { date: "25/03/2024", amount: 500000 },
-  { date: "25/04/2024", amount: 500000 },
-  { date: "25/05/2024", amount: 6000000 },
-  { date: "25/06/2024", amount: 6000000 },
-  { date: "25/07/2024", amount: 6000000 },
-  { date: "25/08/2024", amount: 9500000 },
-  { date: "25/09/2024", amount: 10500000 },
-  { date: "25/10/2024", amount: 10500000 },
-  { date: "25/11/2024", amount: 10500000 },
-  { date: "25/12/2024", amount: 10500000 },
-  { date: "25/01/2025", amount: 6100000 },
-  { date: "25/02/2025", amount: 6100000 },
-  { date: "31/03/2025", amount: 21100000 },
-];
 
 export default function SalaryDashboard() {
-  const [salaryData, setSalaryData] = useState(initialSalaryData);
+  const [salaryData, setSalaryData] = useState(INITIAL_SALARY_DATA);
 
   // Calculate total income
   const totalIncome = salaryData.reduce((sum, item) => sum + item.amount, 0);
