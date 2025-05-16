@@ -16,4 +16,5 @@ export const INITIAL_SALARY_DATA = [
   { date: "25/01/2025", amount: 6100000 },
   { date: "25/02/2025", amount: 6100000 },
   { date: "31/03/2025", amount: 21100000 },
+  { date: "30/04/2025", amount: 17900000 },
 ]
